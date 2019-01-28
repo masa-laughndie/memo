@@ -106,6 +106,12 @@
 
   ![Pullモデル（Amazon Kinesisの場合)](https://codezine.jp/static/images/article/8446/8446_19_s.gif)
 
+### IAM ロール
+
+- ２種類のロールを設定する必要がある
+  - Invocation Role … 誰がファンクションを実行できるかを決定
+  - Execution Role … ファンクションができること（どの AWS のリソースにどういったアクションを行えるか）を決定
+
 * ref
   - [初めての AWS Lambda ～ AWS Lambda で始めるイベントドリブンアプリケーション](https://codezine.jp/article/detail/8446)
   - [Serverless Architectures](https://martinfowler.com/articles/serverless.html)
