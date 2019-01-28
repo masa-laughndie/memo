@@ -97,7 +97,7 @@
 
   ![Pushモデル](https://codezine.jp/static/images/article/8446/8446_18.gif)
 
-- PULL モデル (DynamoDB, Kinetics)
+- PULL モデル (DynamoDB, Kinetics) Stream)
 
   - イベントを直接発行しない
   - Lambda が自らストリームからポーリングしてイベントを所得する
