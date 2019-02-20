@@ -66,19 +66,6 @@
   - 幼稚園、保育園はないか
   - 治安はどうか
 
-## 候補物件メモ
-
-- 祐天寺
-
-  - https://suumo.jp/chintai/jnc_000046891566/?bc=100147064952
-  - https://suumo.jp/chintai/jnc_000045946434/?bc=100143236404
-  - https://suumo.jp/chintai/jnc_000046644512/?bc=100146002734
-  - https://suumo.jp/chintai/jnc_000020710327/?bc=100145421753
-  - https://suumo.jp/chintai/jnc_000046528410/?bc=100146082986
-
-- 中目黒
-  - https://suumo.jp/chintai/jnc_000046847438/?bc=100146803685
-
 ## 参考
 
 - [スマイティ | 理想の一人暮らしとは？部屋探しのポイントと入居までの流れ](https://sumaity.com/press/7/)
