@@ -3,6 +3,7 @@ import matplotlib.pylab as plt
 import sys, os
 sys.path.append(os.pardir)
 from function import active_functions as af
+# from function.utils import p
 from dataset.mnist import load_mnist
 from PIL import Image
 import pickle
@@ -26,7 +27,7 @@ def predict(network, x):
   a2 = np.dot(z1, W2) + b2
   z2 = af.sigmoid(a2)
   a3 = np.dot(z2, W3) + b3
-  y = af.indentity_function(a3)
+  y = af.softmax(a3)
 
   return y
 

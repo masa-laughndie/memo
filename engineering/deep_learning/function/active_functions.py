@@ -12,3 +12,10 @@ def relu(x):
 
 def indentity_function(x):
   return x
+
+def softmax(a):
+  c = np.max(a)
+  e_a = np.exp(a - c)
+  sum_e_a = np.sum(e_a)
+  y = e_a / sum_e_a
+  return y
