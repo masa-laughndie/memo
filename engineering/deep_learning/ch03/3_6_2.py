@@ -5,6 +5,7 @@ sys.path.append(os.pardir)
 from function import active_functions as af
 from dataset.mnist import load_mnist
 from PIL import Image
+import pickle
 
 def get_data():
   (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, flatten=True, one_hot_label=False)
@@ -12,7 +13,7 @@ def get_data():
 
 def init_network():
   with open("sample_weight.pkl", "rb") as f:
-    network = pickle,load(f)
+    network = pickle.load(f)
 
   return network
 
@@ -22,7 +23,6 @@ def predict(network, x):
 
   a1 = np.dot(x, W1) + b1
   z1 = af.sigmoid(a1)
-  print(z1)
   a2 = np.dot(z1, W2) + b2
   z2 = af.sigmoid(a2)
   a3 = np.dot(z2, W3) + b3
@@ -41,4 +41,4 @@ for i in range(len(x)):
   if p == t[i]:
     accurracy_cnt += 1
 
-print("Accurracy:" + str(float(accurracy_cnt)/ len(x)))
+print("Accurracy:" + str(float(accurracy_cnt) / len(x)))
