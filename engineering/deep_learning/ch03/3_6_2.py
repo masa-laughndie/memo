@@ -31,15 +31,15 @@ def predict(network, x):
 
   return y
 
-x, t = get_data()
-network = init_network()
+# x, t = get_data()
+# network = init_network()
 
-accurracy_cnt = 0
-for i in range(len(x)):
-  y = predict(network, x[i])
-  p = np.argmax(y)
+# accurracy_cnt = 0
+# for i in range(len(x)):
+#   y = predict(network, x[i])
+#   p = np.argmax(y)
 
-  if p == t[i]:
-    accurracy_cnt += 1
+#   if p == t[i]:
+#     accurracy_cnt += 1
 
-print("Accurracy:" + str(float(accurracy_cnt) / len(x)))
+# print("Accurracy:" + str(float(accurracy_cnt) / len(x)))
